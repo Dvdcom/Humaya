@@ -158,7 +158,7 @@
                             </p>
                             <P class="card-text color3 p-0 m-0 pb-4">Presentación en caja de 6 y 12 alfajores.</P>
                             <button href="#" type="button"
-                                class="btn btn-outline-dark d-grid gap-2 col-4 mx-auto mt-2 color3"
+                                class="btn btn-outline-dark d-grid gap-2 col-6 mx-auto mt-2 color3"
                                 id="botonDestacado">+Info</button>
                         </div>
                         <img src="IMAGENES/Productos/ProductoDestacado.png" class="img-mobile" width="50%"
