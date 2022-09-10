@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap');
+/*Root - Configuracion de variables*/
+:root{
+    /*paleta de colores*/
+    --color-primario:white;
+    --color-secundario: #D5AC8C;
+    --color-terciario:#63421E;
+    --color-desktop:#bca177;
+}
+/*Ajuste de cuerpo y fondo */
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 650px;
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #434343, #000000);  
+    background: linear-gradient(to right, #434343, #000000);
+}
+
+/*clases de root*/
+.color1{
+    color: var(--color-primario);
+}
+.color2{
+    color: var(--color-secundario);
+}
+.color3{
+    color: var(--color-terciario);
+}
+
+/*-------------Estilos Generales------------*/
+
+/*Fuente:*/
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*En el header*/
+.logo-central{
+    display: none;
+}
+.nav-link:hover{
+    color: var(--color-desktop) !important;
+    text-decoration: underline;
+}
+
+/*En el main*/
+
+#contenedorBienvenida{
+    background-image: url(./IMAGENES/Central/imagenCentral.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+#btn-presentacion:hover{
+    border:none;
+    background-color: var(--color-terciario);
+
+}
+
+h1{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card{
+    border-radius: 0px;
+}
+
+.cardChica{
+    margin: 0;
+    width: 16rem;
+    
+}
+
+.fondoTransparente{
+    background-color: transparent;
+    border: none;
+}
+
+.productosFondo{
+    background-color: #000000;
+}
+
+.bordeBotonCardProductos{
+    color:var(--color-secundario);
+    border-color:var(--color-secundario);
+}
+
+.productoDestacado{
+    height: auto;
+    background-color:var(--color-secundario);
+}
+
+#destacado{
+    font-weight: 400;
+}
+#destacado + p{
+    font-size: 0.9rem;
+}
+
+#destacado + p + p{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+#botonDestacado{
+    border-color: var(--color-terciario);
+}
+
+#botonDestacado:hover{
+    border:none;
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+}
+
+.img-desktop{
+    display: none;
+}
+
+.section-desktop{
+    display: none;
+}
+
+.btn-carosell:hover{
+    border:none;
+    background-color:var(--color-terciario);
+    color: var(--color-primario);
+}
+
+/*En el Footer*/
+
+footer{
+    height: 250px;
+}
+
+#contenedorFirma{
+    background-color: var(--color-secundario);
+    font-size: small;
+}
+
+li{
+    margin-right: 30px;
+    font-weight: bold;
+    list-style: none;
+    color: var(--color-primario);
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-primario);
+}
+
+a:hover{
+    color:var(--color-secundario)
+}
+
+iframe{
+    margin-top: 10px;
+    height: 130px;
+}
+
+/*Media Querie*/
+
+@media screen and (min-width:960px) and (max-width:1111px) {  /*Tablets o pc */
+    /*Ajustes de cuerpo y fondo*/
+
+    body{
+        min-height: 683px;
+        background: #000000;  
+        background: -webkit-linear-gradient(to right, #434343, #000000);  
+        background: linear-gradient(to right, #434343, #000000);
+    }
+
+    /* --------- Estilos Generales ------------ */
+
+    /*en el Header*/
+    .contenedor-bar{
+        position: absolute;
+        margin-top: 3%;
+    }
+
+    .nav-link:hover{
+        color: var(--color-desktop) !important;
+        text-decoration: overline;
+    }
+    
+    .logo-central{
+        display: block;
+    }
+
+    .brand{
+            visibility: hidden;
+    }
+
+    /*En el Main*/
+
+    main{
+        margin: 0;
+        padding: 0;
+    }
+
+    #contenedorBienvenida{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 600px;
+        background-image: url(./IMAGENES/Central/imagenCentral2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #tituloPresentacion{
+        font-size: 2rem;
+        font-weight: 100;
+    }
+
+    #btn-presentacion{
+        border-radius: 0px;
+        border: none;
+        color: var(--color-primario);
+        font-weight: 600;
+    }
+
+    .cardChica{
+        color: var(--color-primario);
+        margin: 0;
+        width: 22rem;
+    }
+
+    .productoDestacado{
+        background-color: var(--color-desktop);
+    }    
+    
+    #botonDestacado{
+        font-weight: bold;
+        border: 3px solid var(--color-terciario);
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .tDestacado{
+        font-weight: 350;
+        font-size: 1.5rem;
+    }
+    .tDestacado + p{
+        color: var(--color-primario);
+    }
+    .tDestacado + p + p{
+        font-weight: bold;
+    }
+    .tDestacado + p + p + button{
+        font-weight: bold;
+        border: 3px solid var(--color-secundario);
+        border-radius: 0px 0px 0px 0px;
+    }
+    .producto1{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        background-color: #000000;
+        height: 500px;
+    }
+    
+    .img1{
+        width: 50%;
+    }
+
+    .img-destacada{
+        background-color: var(--color-desktop);
+    }
+
+    .producto2{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        width: 100%;
+        background-color: #000000;
+        height: 500px;
+    }
+
+    .card1{
+        width: 50%;
+        height: auto;
+        align-self: center;
+        text-align: center;
+    }
+    
+    h1,h3,h4{
+        color: var(--color-primario);
+    }
+    h4{
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    h3{
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    h6{
+        font-weight: 300;
+    }
+
+    h5{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    h5 + p + p {
+        font-weight: bold;
+    }
+
+    /*de formulario*/
+    .frm label{
+        font-weight: 500;
+        color:#995d1e;
+    }
+    .frm-lbl{
+        font-weight: 400 !important;
+        font-size: smaller;
+    }
+    .frm input{
+        border-radius: 0px;
+        background-color: var(--color-terciario);
+    }
+    .frm textarea{
+        border-radius: 0px;
+        background-color: var(--color-terciario);
+    }
+    .frm button{
+        border-radius: 0px;
+        border: 3px solid var(--color-terciario);
+        color: var(--color-terciario);
+    }
+
+    button:hover{
+        background-color: var(--color-terciario);
+        color:var(--color-primario) !important;
+    }
+
+    /*de visivilidad*/
+
+    .img-mobile{
+        display: none;
+    }
+    .img-desktop{
+        display: block;
+    }
+
+    .contenedor-mobile{
+        display: none;
+    }
+
+    .section-desktop{
+        display: block;
+    }
+
+    /*de carousell*/
+
+    .carousel-control-prev, .carousel-control-next{
+        background-color: transparent !important;
+    }
+    .btn-carosell{
+        border-radius: 0px;
+        border: 2px solid var(--color-desktop);
+    }
+    .btn-carosell:hover{
+        border:2px solid var(--color-desktop);
+        background-color: var(--color-desktop);
+        color: #000000;
+        font-weight: bold;
+    }
+
+    /* en el Footer*/
+
+    #contenedorFirma{
+        background-color: var(--color-desktop);
+        font-size: small;
+    }
+
+    li{
+        margin-top: 25px;
+    }
+
+    iframe{
+        margin-top: 0px;
+        height: 115px;
+    }
+
+}
+
+@media screen and (min-width:1112px) { /*Para dispositivos de más alta resolución*/
+    body{
+        margin: auto;
+        width: 1111px;
+        background: #000000;  
+        background: -webkit-linear-gradient(to right, #434343, #000000);  
+        background: linear-gradient(to right, #434343, #000000);
+    }
+    
+    /* --------- Estilos Generales ------------ */
+
+    /*en el Header*/
+    .contenedor-bar{
+        position: absolute;
+        margin-top: 3%;
+    }
+
+    .nav-link:hover{
+        color: var(--color-desktop) !important;
+        text-decoration: overline;
+    }
+    
+    .logo-central{
+        display: block;
+    }
+
+    .brand{
+            visibility: hidden;
+    }
+
+    /*En el Main*/
+
+    main{
+        margin: 0;
+        padding: 0;
+    }
+
+    #contenedorBienvenida{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 600px;
+        background-image: url(./IMAGENES/Central/imagenCentral2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #tituloPresentacion{
+        font-size: 2rem;
+        font-weight: 100;
+    }
+
+    #btn-presentacion{
+        border-radius: 0px;
+        border: none;
+        color: var(--color-primario);
+        font-weight: 600;
+    }
+
+    .cardChica{
+        color: var(--color-primario);
+        margin: 0;
+        width: 22rem;
+    }
+
+    .productoDestacado{
+        background-color: var(--color-desktop);
+    }    
+    
+    #botonDestacado{
+        font-weight: bold;
+        border: 3px solid var(--color-terciario);
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .tDestacado{
+        font-weight: 350;
+        font-size: 1.5rem;
+    }
+    .tDestacado + p{
+        color: var(--color-primario);
+    }
+    .tDestacado + p + p{
+        font-weight: bold;
+    }
+    .tDestacado + p + p + button{
+        font-weight: bold;
+        border: 3px solid var(--color-secundario);
+        border-radius: 0px 0px 0px 0px;
+    }
+    .producto1{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        background-color: #000000;
+        height: 500px;
+    }
+    
+    .img1{
+        width: 50%;
+    }
+
+    .img-destacada{
+        background-color: var(--color-desktop);
+    }
+
+    .producto2{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        width: 100%;
+        background-color: #000000;
+        height: 500px;
+    }
+
+    .card1{
+        width: 50%;
+        height: auto;
+        align-self: center;
+        text-align: center;
+    }
+    
+    h1,h3,h4{
+        color: var(--color-primario);
+    }
+    h4{
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    h3{
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    h6{
+        font-weight: 300;
+    }
+
+    h5{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    h5 + p + p {
+        font-weight: bold;
+    }
+
+    /*de formulario*/
+    .frm label{
+        font-weight: 500;
+        color:#995d1e;
+    }
+    .frm-lbl{
+        font-weight: 400 !important;
+        font-size: smaller;
+    }
+    .frm input{
+        border-radius: 0px;
+        background-color: var(--color-terciario);
+    }
+    .frm textarea{
+        border-radius: 0px;
+        background-color: var(--color-terciario);
+    }
+    .frm button{
+        border-radius: 0px;
+        border: 3px solid var(--color-terciario);
+        color: var(--color-terciario);
+    }
+
+    button:hover{
+        background-color: var(--color-terciario);
+        color:var(--color-primario) !important;
+    }
+
+    /*de visivilidad*/
+
+    .img-mobile{
+        display: none;
+    }
+    .img-desktop{
+        display: block;
+    }
+
+    .contenedor-mobile{
+        display: none;
+    }
+
+    .section-desktop{
+        display: block;
+    }
+
+    /*de carousell*/
+
+    .carousel-control-prev, .carousel-control-next{
+        background-color: transparent !important;
+    }
+    .btn-carosell{
+        border-radius: 0px;
+        border: 2px solid var(--color-desktop);
+    }
+    .btn-carosell:hover{
+        border:2px solid var(--color-desktop);
+        background-color: var(--color-desktop);
+        color: #000000;
+        font-weight: bold;
+    }
+
+    /* en el Footer*/
+
+    #contenedorFirma{
+        background-color: var(--color-desktop);
+        font-size: small;
+    }
+
+    li{
+        margin-top: 25px;
+    }
+
+    iframe{
+        margin-top: 0px;
+        height: 115px;
+    }
+
+}
+
