@@ -154,7 +154,7 @@
                         <div class="card-body pt-4 mx-2" style="width: 50%;">
                             <h5 class="card-title pb-2 color3 text-center" id="destacado">ALFAJORES DE MAICENA</h5>
                             <p class="card-text text-white color3">Alfajores de dulce con coco rallado, relleno con 2cm
-                                de pura dulzura. Pudiendo elegir entre dulce de leche tradicional, light o choconutt.
+                                de pura dulzura. <span class="section-desktop">Pudiendo elegir entre dulce de leche tradicional, light o choconutt.</span>
                             </p>
                             <P class="card-text color3 p-0 m-0 pb-4">Presentación en caja de 6 y 12 alfajores.</P>
                             <button href="#" type="button"
